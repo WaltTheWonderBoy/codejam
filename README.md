@@ -1,2 +1,2 @@
 # codejam
-Soluciones a problemas de CodeJam
+Soluciones a problemas de Code Jam
