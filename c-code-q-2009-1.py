@@ -19,7 +19,7 @@ def _funcion (case):
 				dicc[1][i]=dicc[1][i-1]				
 	for longitud in xrange (2, len(leyenda)+1):
 		for i in xrange (longitud, len (case)+1):
-			if leyenda[longitud-1]==case[i-1]:
+			if case[i-1]==leyenda[longitud-1]:
 				dicc[longitud][i]=dicc[longitud-1][i-1]+dicc[longitud][i-1]
 			else:
 				dicc[longitud][i]=dicc[longitud][i-1]
