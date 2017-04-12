@@ -56,9 +56,7 @@ def _mainFunction(N, K):
 				dicc[tree[i][0]]+=dicc[tree[i-2][0]]
 				dicc[tree[i][1]]+=dicc[tree[i-2][0]]+2*dicc[tree[i-1][1]]				
 		
-	b=dicc[tree[2*log(K)-1][1]]		
-	
-	if K-2**log(K)< b:
+	if K-2**log(K)< dicc[tree[2*log(K)-1][1]]:
 		return max (tree[-1][0], tree[-1][1]), min (tree[-1][0], tree[-1][1])
 		
 	return max (tree[-2][0], tree[-2][1]), min (tree[-2][0], tree[-2][1])  			
